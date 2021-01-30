@@ -5,7 +5,8 @@
   "main": "main.js",
   "scripts": {
     "start": "parcel serve src/index.html --public-url='.'",
-    "build": "parcel build src/index.html --out-dir=dist --public-url='.'",
+    "build": "parcel build src/index.html --out-dir=www --public-url='.'",
+    "ionic:build": "parcel build src/index.html --out-dir=www --public-url='.'",
     "electron:serve": "electron serve.js",
     "electron:build": "electron-packager . universal --overwrite --ignore=\"(node_modules|src|.cache)\""
   },
@@ -20,9 +21,14 @@
   },
   "homepage": "https://github.com/qluqua/skillbox-avia-live#readme",
   "dependencies": {
+    "@capacitor/android": "2.4.6",
+    "@capacitor/core": "2.4.6",
     "@types/electron": "1.6.10",
     "electron": "11.2.1",
     "electron-packager": "15.2.0",
     "parcel": "1.12.4"
+  },
+  "devDependencies": {
+    "@capacitor/cli": "2.4.6"
   }
 }

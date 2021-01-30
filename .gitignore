@@ -1,4 +1,5 @@
 node_modules
-dist
+www
 .cache
 universal-darwin-x64
+.gradle
