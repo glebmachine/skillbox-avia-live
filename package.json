@@ -1,0 +1,23 @@
+{
+  "name": "skillbox-avia-live",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel serve src/index.html",
+    "build": "parcel build src/index.html --out-dir=dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qluqua/skillbox-avia-live.git"
+  },
+  "author": "Gleb Mikheev <mikheev@betaagency.ru> (http://betaagency.ru)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qluqua/skillbox-avia-live/issues"
+  },
+  "homepage": "https://github.com/qluqua/skillbox-avia-live#readme",
+  "dependencies": {
+    "parcel": "1.12.4"
+  }
+}
