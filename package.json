@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel serve src/index.html",
-    "build": "parcel build src/index.html --out-dir=dist"
+    "build": "parcel build src/index.html --out-dir=dist --public-url='.'",
+    "electron:serve": "electron main.js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,8 @@
   },
   "homepage": "https://github.com/qluqua/skillbox-avia-live#readme",
   "dependencies": {
+    "@types/electron": "1.6.10",
+    "electron": "11.2.1",
     "parcel": "1.12.4"
   }
 }
