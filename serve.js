@@ -9,6 +9,7 @@ app.whenReady()
       frame: false,
       // fullscreen: true,
     });
-    win.loadFile('dist/index.html');
-    // win.webContents.openDevTools();
+    // win.loadFile('dist/index.html');
+    win.loadURL('http://localhost:1234');
+    win.webContents.openDevTools();
   });

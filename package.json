@@ -2,11 +2,12 @@
   "name": "skillbox-avia-live",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "start": "parcel serve src/index.html",
+    "start": "parcel serve src/index.html --public-url='.'",
     "build": "parcel build src/index.html --out-dir=dist --public-url='.'",
-    "electron:serve": "electron main.js"
+    "electron:serve": "electron serve.js",
+    "electron:build": "electron-packager . universal --overwrite --ignore=\"(node_modules|src|.cache)\""
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,7 @@
   "dependencies": {
     "@types/electron": "1.6.10",
     "electron": "11.2.1",
+    "electron-packager": "15.2.0",
     "parcel": "1.12.4"
   }
 }
