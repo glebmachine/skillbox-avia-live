@@ -1,0 +1,6 @@
+{
+  "runtimes": {
+    "browser": ["@parcel/runtime-js", "@parcel/runtime-browser-hmr"],
+    "node": ["@parcel/runtime-js"]
+  }
+}
