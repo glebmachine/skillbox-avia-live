@@ -7,6 +7,7 @@
     "start": "parcel serve src/index.html --public-url='.'",
     "build": "parcel build src/index.html --out-dir=www --public-url='.'",
     "ionic:build": "parcel build src/index.html --out-dir=www --public-url='.'",
+    "ionic:serve": "parcel serve src/index.html",
     "electron:serve": "electron serve.js",
     "electron:build": "electron-packager . universal --overwrite --ignore=\"(node_modules|src|.cache)\""
   },
@@ -23,6 +24,7 @@
   "dependencies": {
     "@capacitor/android": "2.4.6",
     "@capacitor/core": "2.4.6",
+    "@capacitor/ios": "2.4.6",
     "@types/electron": "1.6.10",
     "electron": "11.2.1",
     "electron-packager": "15.2.0",

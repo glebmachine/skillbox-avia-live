@@ -18,6 +18,9 @@ body {
 body.electron {
   background-color: #50147b;
 }
+body.ios {
+  background-color: #50947b;
+}
 
 .heading {
   margin-top: 40px;
